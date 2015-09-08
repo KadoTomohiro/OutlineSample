@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>outline</title>
+  <style media="screen">
+    html,body{
+      margin: 0;
+      height: 100%;
+    }
+    body{
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .contents{
+      flex:1;
+
+      display:flex;
+      flex-wrap: nowrap;
+      /*align-items:stretch;*/
+      justify-content: space-between;
+    }
+
+    header,nav,article,section,aside,footer{
+      border:1px solid #000;
+    }
+
+    article{
+      flex-grow:1;
+    }
+
+    aside{
+      width:300px;
+    }
+
+
+    header{
+
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css">
+<script src="/bower_components/material-design-lite/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+</head>
+<body>
+  <header>
+    <h1>header</h1>
+  </header>
+  <div class="contents">
+    <nav>
+      <h1>navigation</h1>
+    </nav>
+    <article>
+      <h1>
+        article
+      </h1>
+    </article>
+    <aside>
+      <h1>
+        aside
+      </h1>
+    </aside>
+  </div>
+  <footer>
+    footer
+  </footer>
+</body>
+</html>
